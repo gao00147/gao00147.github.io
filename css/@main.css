@@ -1,0 +1,51 @@
+week-5/
+images/
+  coffee-cup.jpg
+css/
+  main.css
+index.html
+contact.html
+/* 
+  using the body selector 
+  styling two properties by adding two declarations
+  yes, this is a css comment
+*/
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+header, footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+.site-title {
+    color: #333;
+}
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+#hobbies ul {
+    list-style-type: square;
+}
+#hobbies ul li:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    background-color: #ddd;
+    border: 1px solid #ccc; 
+    padding: 5px 10px;
+    color: #333;
+}
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #bbb; /* Change the background colour on hover or focus state of the links */
+}
