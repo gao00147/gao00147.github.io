@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <link href="css/main.css" rel="stylesheet">
     <title>My Web Page</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Yijia Gao</h1>
-    <p>Welcome to my website!</p>
-  
-    <h2><em>My Introduction</em></h2>
-    <p>I worked as a freelance designer for three years in my country. Now, it is my fifth month<sup>th</sup> here. I have made many friends, but unlike when I was studying for my undergraduate degree (a <abbr title="Bachelor of Arts">BA</abbr>) in other countries, these friends in the school here come from various age groups.</p>
+    <header>
+        <h1 class="site-title">Yijia Gao</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2><em>My Recent Updates</em></h2>
-    <p>I am from China, on the other side of the Earth. The experience of studying across the Pacific and the cold winters here initially made it difficult for my body to adapt — I caught a severe flu. But I think I will recover soon because I can't wait to enjoy the outdoor activities in Canada's winter.</p>
+    <main>
+        <section id="introduction">
+            <h2><em>About Me</em></h2>
+            <p>
+                I worked as a freelance designer for three years in my home country. Now, it has been five months since I arrived here. I have made many friends, but unlike when I was studying for my undergraduate degree (a <abbr title="Bachelor of Arts">BA</abbr>) in other countries, the friends I have made here come from various age groups.
+            </p>
+        </section>
 
-    <h2>My Favorite Quote</h2>
-    <p>Time heals everything.</p>
-    <img src="https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png"> 
+        <section id="updates">
+            <h2><em>Recent Updates</em></h2>
+            <p>
+                I am from China, on the other side of the Earth. The experience of studying across the Pacific and the cold winters here initially made it difficult for my body to adapt—I caught a severe flu. But I think I will recover soon because I can't wait to enjoy the outdoor activities during Canada's winter.
+            </p>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Traveling</li>
+                <li>Photography</li>
+                <li>Cooking</li>
+            </ul>
+        </section>
+
+        <section id="image">
+            <h2>My Photo</h2>
+            <img id="my-image" src="images/coffee-cup.jpg" alt="Coffee Cup">
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Yijia Gao. All rights reserved.</p>

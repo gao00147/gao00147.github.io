@@ -1,6 +1,6 @@
 week-5/
 images/
-  coffee-cup.jpg
+  view.jpg
 css/
   main.css
 index.html
@@ -47,5 +47,5 @@ nav ul li a {
     color: #333;
 }
 nav ul li a:hover, nav ul li a:focus {
-    background-color: #bbb; /* Change the background colour on hover or focus state of the links */
+    background-color: #bbb; 
 }
