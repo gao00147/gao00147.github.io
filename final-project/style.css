@@ -1,0 +1,261 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Mobile First */
+body {
+    background-color: white;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Container Limit */
+main, section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #222;
+    padding: 1rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.nav-links li {
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+}
+
+.search-bar button {
+    padding: 0.5rem;
+    background-color: #c78c06;
+    border: none;
+    color: white;
+}
+
+/* Welcome */
+.welcome-section {
+    background: url('../images/main-banner.jpg') center/cover no-repeat;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.connect-btn {
+    background-color: #c78c06;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+/* About Us */
+.about-section {
+    background-color: #ffe6ac;
+    padding: 2rem 1rem;
+}
+
+.about-section img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Services */
+.services-section h2 {
+    margin-bottom: 1rem;
+}
+
+.service {
+    background-color: #ffe6ac;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.service img {
+    width: 100%;
+}
+
+.service h3 {
+    margin-top: 1rem;
+}
+
+.service-btn {
+    margin-top: 1rem;
+    background-color: #222;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+/* Vision */
+.vision-section {
+    background: url('../images/vision.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.vision-btn {
+    margin-top: 1rem;
+    background-color: #c78c06;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+}
+
+/* Team */
+.team-section {
+    padding: 2rem 1rem;
+}
+
+.team-member {
+    background-color: #ffe6ac;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.team-member img {
+    width: 100%;
+}
+
+.team-member .title {
+    font-weight: bold;
+    color: #c78c06;
+    margin: 0.5rem 0;
+}
+
+/* Contact */
+.contact-section {
+    padding: 2rem 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form button {
+    width: fit-content;
+    background-color: #c78c06;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+}
+
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours th,
+.hours td {
+    border: 1px solid #222;
+    padding: 0.5rem;
+}
+
+.map-location iframe {
+    width: 100%;
+    border: 0;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+/* Grid Layout for Services Section on Larger Screens */
+@media (min-width: 760px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .service {
+        height: 100%;
+    }
+
+    .team-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .contact-form {
+        max-width: 600px;
+    }
+
+    .contact-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .map-location {
+        grid-column: span 2;
+    }
+}
