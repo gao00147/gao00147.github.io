@@ -76,7 +76,7 @@ nav {
 
 /* Welcome */
 .welcome-section {
-    background: url('../images/main-banner.jpg') center/cover no-repeat;
+    background: url('images/main-banner.jpg') center/cover no-repeat;
     color: white;
     padding: 4rem 1rem;
     text-align: center;
@@ -130,7 +130,7 @@ nav {
 
 /* Vision */
 .vision-section {
-    background: url('../images/vision.jpg') center/cover no-repeat;
+    background: url('images/vision.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 4rem 1rem;
